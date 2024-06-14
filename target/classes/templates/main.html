@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная страница</title>
+</head>
+<style>
+body{
+    font-family: 'Arial', 'sans-serif';
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+}
+.container{
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+}
+.user-block{
+    background-color: #ffffff;
+    border-left: 5px solid #4c1;
+    padding: 10px;
+}
+h2{
+    color: #333333;
+}
+input[type="submit"]{
+    padding: 10px 20px;
+    background-color: #c11;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #a00;
+}
+</style>
+<body>
+<div class="container user-block">
+<h2>Эта страница доступна всем</h2>
+<a th:href="@{/login}">Войти</a>
+<a th:href="@{/registration}">Зарегистрироваться</a>
+</div>
+</body>
+</html>
